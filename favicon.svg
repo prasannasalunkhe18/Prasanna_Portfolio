@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PS">
+  <rect width="64" height="64" fill="#141416"/>
+  <!-- subtle scanlines -->
+  <g stroke="#ffffff" stroke-opacity="0.045" stroke-width="1">
+    <path d="M0 8h64M0 16h64M0 24h64M0 32h64M0 40h64M0 48h64M0 56h64"/>
+  </g>
+  <!-- soft vignette ring -->
+  <circle cx="32" cy="32" r="26" fill="none" stroke="#2a2a2e" stroke-width="4"/>
+  <circle cx="32" cy="32" r="22" fill="none" stroke="#e6e4e0" stroke-width="2"/>
+  <!-- PS mark -->
+  <text
+    x="32"
+    y="38"
+    text-anchor="middle"
+    font-family="Arial Black, Helvetica Neue, Arial, sans-serif"
+    font-size="20"
+    font-weight="800"
+    letter-spacing="1.5"
+    fill="#e6e4e0"
+  >PS</text>
+  <!-- terminal cursor accent -->
+  <rect x="44" y="41" width="7" height="2.5" rx="0.5" fill="#8fd6a8"/>
+</svg>
