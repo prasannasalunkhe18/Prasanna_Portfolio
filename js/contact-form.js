@@ -187,7 +187,7 @@
         return;
       }
       if (message.length < 10) {
-        showFail(block, "Please include a short project summary (at least 10 characters).");
+        showFail(block, "Please share your thoughts (at least 10 characters).");
         return;
       }
       if (message.length > 5000) {
