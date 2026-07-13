@@ -1591,28 +1591,31 @@ secure it.
                 </a>
             </div>
             <div class="contact-me_form-block w-form">
-                <form id="wf-form-Web-Form" name="wf-form-Web-Form" data-name="Web Form" method="get" class="contact-me_form">
+                <form id="wf-form-Web-Form" name="wf-form-Web-Form" data-name="Web Form" method="POST" class="contact-me_form" novalidate>
                     <div class="form-field">
-                        <label for="name" class="input-label">yOUR nAME
-          </label>
-                        <input type="text" class="input w-input" maxlength="256" name="name" data-name="name" placeholder="" id="name" required="" />
+                        <label for="name" class="input-label">Your Name</label>
+                        <input type="text" class="input w-input" maxlength="256" name="name" data-name="name" placeholder="" id="name" required />
                     </div>
                     <div class="form-field">
-                        <label for="email" class="input-label">Email
-          </label>
-                        <input type="email" class="input w-input" maxlength="256" name="email" data-name="email" placeholder="" id="email" required="" />
-                    </div><a href="">
-        <input type="submit" data-wait="Please wait..." value="Submit" class="button w-button"/></a>
+                        <label for="email" class="input-label">Email</label>
+                        <input type="email" class="input w-input" maxlength="256" name="email" data-name="email" placeholder="" id="email" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="message" class="input-label">Project Summary</label>
+                        <textarea id="message" name="message" maxlength="5000" data-name="Message" placeholder="Tell me more about your project..." required class="input textarea w-input"></textarea>
+                    </div>
+                    <input type="submit" data-wait="Please wait..." value="Submit" class="button w-button" />
                 </form>
-                <div class="contact-me_success w-form-done">
+                <div class="contact-me_success w-form-done" style="display:none;">
                     <div class="contactme_success-headline">Thanks for reaching out to me.
                     </div>
                     <p class="p-14">You can anticipate the reply within 24 hours.
                     </p>
                 </div>
-                <!-- <div class="w-form-fail">
-        <div>Oops! Something went wrong while submitting the form.
-        </div> -->
+                <div class="w-form-fail" style="display:none;">
+                    <div>Oops! Something went wrong while submitting the form.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1759,6 +1762,7 @@ secure it.
             });
         });
     </script>
+    <script src="js/contact-form.js"></script>
 </body>
 
 </html>
